@@ -35,8 +35,14 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
+
     public function form()
     {
         return $this->belongsTo(Form::class);
     }
+    public function isAdmin()
+{
+    return $this->admin; // this looks for an admin column in your users table
+}
+
 }

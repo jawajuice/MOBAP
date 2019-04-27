@@ -1,9 +1,5 @@
-<!DOCTYPE html>
-<html>
-<head>
-
-</head>
-<body>
+@extends('layouts.app')
+@section('content')
 <h1>Users</h1>
 
 
@@ -16,6 +12,4 @@
 		{{ $user->name }}</li>
 		</a>
 	@endforeach
-
-</body>
-</html>
+@endsection

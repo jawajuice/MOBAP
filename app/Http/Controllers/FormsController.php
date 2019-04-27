@@ -29,18 +29,18 @@ class FormsController extends Controller
 
 	public function create()
 	{
-/*		$forms = Form::where('owner_id', auth()->id())->get();
+		$forms = Form::where('owner_id', auth()->id())->get();
 		if (!isset($forms)){
 		return view('forms.create');
 		}
-		else {*/
-		return view('forms.create');
-		//}
+		else {
+		return view('forms.show');
+		}
 
 	}
-    public function update(\App\Form $form){
-    	$form->update(Request(['title'], ['description']));
-    	return redirect('/forms');
+    public function update(){
+
+    	return abort(404);
     }
    	public function store()
     {

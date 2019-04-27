@@ -1,4 +1,4 @@
-@extends('layout')
+@extends('layouts.app')
 
 @section('content')
 
@@ -10,32 +10,21 @@
 
 	<div class="content">
 
-		<a href="/forms/{{ $form->id }} /edit">
-			<p style="{{Auth::guest() ? 'display: none' : ''}}">Edit</p>
-
-		</a>
-
 	</div>
-	
-	@if ($form->count())
-		<div>
-			@foreach ($form as $task)
 
-				<div class="box">
+		@if ($form->count())
+			<div>
+				@foreach ($form as $task)
 
-						@method('PATCH')
-						@csrf
-
-					</form>
-
+					<div class="box">
 
 					</div>
 
 
-			@endforeach
+				@endforeach
+			</div>
+		@endif
 
-		</div>
-	@endif
 
 	<form class="box" method="POST" action="/projects/{{$form->id}}/tasks">
 		@csrf

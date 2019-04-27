@@ -14,8 +14,8 @@ class Form extends Model
 		return $this->belongsTo(Post::class);
 	}
 
-    public function user() //$post->user
+    public function user() //$form->user
     {
-    	return $this->belongsTo(User::class);
+    	return $this->belongsTo('App\User', 'owner_id');
     }
 }

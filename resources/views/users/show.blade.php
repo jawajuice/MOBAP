@@ -1,4 +1,4 @@
-@extends('layout')
+@extends('layouts.app')
 
 @section('content')
 
@@ -10,6 +10,9 @@
 		<div class="content">{{ $user->created_at }}
 	</div>
 			<div class="content">{{ $user->updated_at }}
+	</div>
+	</div>
+			<div class="content">{{ $user->admin }}
 	</div>
 
 	<div class="content">

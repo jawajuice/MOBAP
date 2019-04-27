@@ -23,9 +23,19 @@
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
             <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'Laravel') }}
+                <a class="navbar-brand" href="{{ url('/home') }}">
+                    {{ config('Mobap', 'Mobap') }}
                 </a>
+                @if(Auth::user())
+                <a class="navbar-brand" href="{{ url('/forms') }}">
+                    {{ config('Forms', 'Forms') }}
+                </a>
+                    @if(Auth::user()->isAdmin())
+                    <a class="navbar-brand" href="{{ url('/users') }}">
+                        {{ config('Users', 'Users') }}
+                    </a>
+                    @endif
+                @endif
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
                 </button>
