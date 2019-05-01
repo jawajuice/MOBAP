@@ -13,6 +13,7 @@ class Admin
      * @param  \Closure  $next
      * @return mixed
      */
+    //admin filtering
     public function handle($request, Closure $next)
 {
      if (Auth::user() &&  Auth::user()->isAdmin() == 1) {

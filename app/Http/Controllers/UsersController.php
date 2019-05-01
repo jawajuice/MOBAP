@@ -12,6 +12,7 @@ class UsersController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    //index of /users, only available to admin users
     public function index()
     {
         if (auth()->user()->admin == 1) {
@@ -50,6 +51,7 @@ class UsersController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
+    //view specific user details, only available to admin users.
     public function show($id) {
         if (auth()->user()->admin == 1) {
             $user = User::findOrFail($id);
@@ -67,6 +69,7 @@ class UsersController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
+    //TODO: admin can grant or take away admin property from a user
     public function edit($id)
     {
         //
@@ -90,6 +93,7 @@ class UsersController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
+    //TODO: admin can remove users?
     public function destroy($id)
     {
         //
