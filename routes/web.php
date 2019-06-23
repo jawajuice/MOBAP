@@ -12,9 +12,15 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('visitors/welcome');
 });
 
+Route::get('/name', 'VisitorController@name');
+Route::post('/age','VisitorController@age');
+Route::post('/mood','VisitorController@mood');
+Route::post('/gender','VisitorController@gender');
+
+Route::post('/avatar','AvatarController@avatar');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

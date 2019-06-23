@@ -1,0 +1,26 @@
+#appavatar {
+position: relative;
+	z-index: -2;
+  background: url('/images/avatar_bg.png') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  height: 100vh;
+}
+
+.bg_div {
+	position: fixed;
+	z-index:-1;
+	margin-left: 0;
+	width: 100vw;
+	height: 30%;
+	left: 0;
+	bottom: 0;
+	background-color: #FFDA77;
+	border-radius: 12px 12px 0px 0px;
+}
+
+.avatarimg {
+	float:left;
+}
