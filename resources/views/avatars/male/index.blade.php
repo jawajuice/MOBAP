@@ -1,7 +1,7 @@
 @extends('layout')
 
 @section('content')
-<div id="appavatar">
+<div id="app" class="appavatar">
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
@@ -14,16 +14,21 @@
 
                 <h1>ŽIVJO</h1>
                 <h1>{{Session::get('user')}}</h1>
-                <h4>AVATAR</h4>
+                <h4>MALE HIGHER</h4>
                 </div>
                 <div class="card-2">
 
                 </div>
                 <div class="card-3">
-                    <img src="/images/avatar.png" class="avatarimg">
+                    <img src="/images/avatar2.png" class="avatarimg2">
+                    <div class="text_cloud">
+                        <p><b>Živjo {{Session::get('user')}}</b>
+                            <br>Hvala, da si mi dal tako lepo ime in me uredil!
+                        </p>
+                    </div>
                 </div>
                 <div class="card-4">
-                    <button class="button-forward"><a href="/name"><h2>ZAČNI</h2></a></button>
+                    <button class="button-forward"><a href="/male_name"><h2>NAPREJ</h2></a></button>
 
                     <div class="bg_div">
                     </div>                   

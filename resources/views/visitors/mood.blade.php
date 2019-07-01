@@ -1,7 +1,7 @@
 @extends('layout')
 
 @section('content')
-<div id="app">
+<div id="app" class="appvisitors">
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
@@ -47,11 +47,13 @@
                     </form>
                     <form method="POST" action="/avatar">
                     @csrf
-                       <input type="submit" value="NAPREJ" class="button-forward" id="name-submit">
+                       <input type="submit" class="hidden" id="mood-submit" />
                     </form>
                 </div>
                 <div class="card-3">
-                    
+                    <div class="label-button">
+                        <label for="mood-submit" class="button-forward" tabindex="0" ><h2>NAPREJ</h2></label>
+                    </div>
                 </div>
                 <div class="card-4">
 

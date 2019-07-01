@@ -1,6 +1,8 @@
 .button-forward {
 	width: 180px;
 	height: 50px;
+	position: relative;
+	z-index: 10;
 	background-color: #FFA45B;
 	border-radius: 12px;
 	border-color: none;
@@ -23,20 +25,22 @@ input[type=submit] {
 h1{
 	font-family: Ubuntu;
  	font-weight: bold;
- 	font-size: 50px;
+ 	font-size: 46px;
  	color: white;
+ 	line-height: 45px;
  }
  h2{
 	font-family: Ubuntu;
  	font-weight: bold;
- 	font-size: 28px;
+ 	font-size: 25px;
  	color: white;
  }
 
 h4 {
 	font-family: Ubuntu;
-	font-size:18px;
+	font-size:17px;
 	color: white;
+
 }
 
 .card-body {
@@ -90,7 +94,7 @@ input:active {
 	width: 100%;
 	margin: auto;
 	margin-bottom: 0px;
-	margin-top: 30px;
+
 }
 .card{
 	background-color: none;
@@ -291,3 +295,21 @@ p{margin-bottom:.3em;}
 .cc-selector-2 input{ margin: 5px 0 0 12px; }
 .cc-selector-2 label{ margin-left: 7px; }
 span.cc{ color:#6d84b4 }
+
+.label-button {
+	height: 50px;
+	h2 {
+	margin-top:6px;
+	}
+}
+
+.dim {
+	position: absolute;
+	z-index:999;
+	width: 100vw;
+	height: 100vh;
+	background-color: black;
+	opacity: 0.4;
+	display:none;
+}
+

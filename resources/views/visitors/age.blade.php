@@ -1,7 +1,7 @@
 @extends('layout')
 
 @section('content')
-<div id="app">
+<div id="app" class="appvisitors">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-8">
@@ -30,12 +30,14 @@
                               <input type="radio" value="higher" name="age">
                               <span class="checkmark"></span>
                             </label>
-                           <input type="submit" value="NAPREJ" class="button-forward" id="name-submit">
+                           <input type="submit" class="hidden" id="age-submit" />
                         </form>
                         </div>
                     </div>
                     <div class="card-3">
-                        
+                    <div class="label-button">
+                        <label for="age-submit" class="button-forward" tabindex="0" ><h2>NAPREJ</h2></label>
+                    </div>
                     </div>
                     <div class="card-4">
 

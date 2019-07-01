@@ -1,7 +1,7 @@
 @extends('layout')
 
 @section('content')
-<div id="app">
+<div id="app" class="appvisitors">
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
@@ -21,13 +21,15 @@
                     <form method="POST" action="/age">
                     @csrf
                       <input type="text" name="name"><br>
-                        <button type="submit" class="button-forward" id="name-submit">Create project</button>
+                        <input type="submit" class="hidden" id="name-submit" />
 
                     </form>
 
                 </div>
                 <div class="card-3">
-                    
+                    <div class="label-button">
+                        <label for="name-submit" class="button-forward" tabindex="0" ><h2>NAPREJ</h2></label>
+                    </div>
                 </div>
                 <div class="card-4">
                       <div class="progress_container">
@@ -51,4 +53,13 @@
     </div>
 </div>
 </div>
+<script type="text/javascript">
+$(document).ready(function(){
+    $( "#target" ).focus(function() {
+      alert( "Handler for .focus() called." );
+    });
+});
+
+
+</script>
 @endsection
