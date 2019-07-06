@@ -19,7 +19,20 @@
 	background-color: #FFDA77;
 	border-radius: 12px 12px 0px 0px;
 }
-
+.bg_div_upper {
+	position: fixed;
+	z-index:1;
+	margin-left: 0;
+	width: 100vw;
+	height: 30%;
+	left: 0;
+	top: 0;
+	background-color: #FFDA77;
+	border-radius: 0px 0px 12px 12px;
+}
+#zanima-bg {
+	background-color: #FFA45B;
+}
 .avatarimg {
 	position:relative;
 	z-index: 10;
@@ -109,3 +122,35 @@
 	border-bottom: 1px solid black;
 }
 
+.question_cloud {
+
+	margin: auto;
+	margin-top: 10px;
+	min-width: 90%;
+	min-height: 65px;
+	background-color: white;
+	border-radius: 15px;
+	padding: 5px;
+	padding-right:10px;
+
+	p{
+		font-family: Ubuntu;
+		font-size: 13pt;
+		font-weight: bold;
+		text-align: center;
+		vertical-align: middle;
+	}
+	@media only screen and (max-width: 360px) {
+		width: 150px;
+			p{
+
+				font-size: 12pt;
+
+			}
+
+	}
+}
+
+#zanima-card-3{
+	margin-top: 20% !important;
+}

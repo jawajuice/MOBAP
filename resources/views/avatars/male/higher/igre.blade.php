@@ -12,31 +12,42 @@
                 </div>
                 <div class="card-1">
 
-                <h1>BARVA</h1>
+                <h1>IGRE</h1>
                 </div>
                 <div class="card-2">
                     @if(Session::get('gender') == 'male')
                         <img src="/images/avatar2.png" class="avatarimg2">
-                    @else
-                        <img src="/images/avatar.png" class="avatarimg">
-                    @endif
                     <div class="text_cloud">
-                        <p>Kateri je tvoj najljubši letni čas?</p>
+                        <p>Katere družabne ali računalniške igre rad igraš?</p>
                         <img src="/images/monster.png"></img>
-                        <form method="POST" action="/male_spoznanje" >
+                        <form method="POST" action="/male_idol" >
                             @csrf
-                            <input type="text" name="letnicas" class="prijatelji-input">
-                             <input type="submit" class="hidden" id="letnicas-submit"/>
+                            <input type="text" name="igre" class="prijatelji-input">
+                             <input type="submit" class="hidden" id="igre-submit"/>
                         </form>
                         
-                </div>
+                    </div>
+                    @else
+                        <img src="/images/avatar.png" class="avatarimg">
+                    <div class="text_cloud">
+                        <p>Katere družabne ali računalniške igre rada igraš?</p>
+                        <img src="/images/monster.png"></img>
+                        <form method="POST" action="/male_idol" >
+                            @csrf
+                            <input type="text" name="igre" class="prijatelji-input">
+                             <input type="submit" class="hidden" id="igre-submit"/>
+                        </form>
+                        
+                    </div>
+                    @endif
+
                 <div class="card-3">
 
                     </div>
                 </div>
                 <div class="card-4">
                     <div class="label-button">
-                        <label for="letnicas-submit" class="button-forward" tabindex="0" ><h2>NAPREJ</h2></label>
+                        <label for="igre-submit" class="button-forward" tabindex="0" ><h2>NAPREJ</h2></label>
                     </div>
 
                     <div class="bg_div">

@@ -15,7 +15,11 @@
                 <h1>POMOČ</h1>
                 </div>
                 <div class="card-2">
-                    <img src="/images/avatar2.png" class="avatarimg2">
+                    @if(Session::get('gender') == 'male')
+                        <img src="/images/avatar2.png" class="avatarimg2">
+                    @else
+                        <img src="/images/avatar.png" class="avatarimg">
+                    @endif
                     <div class="text_cloud">
                         <p>V mojem svetu lahko počneš veliko stvari. Potrkaj spodaj in poklepetaj z mano.</p>
                 </div>
@@ -24,7 +28,7 @@
                     </div>
                 </div>
                 <div class="card-4">
-                    <button class="button-forward"><h2>POTRKAJ</h2></button>
+                    <button class="button-forward"><a href="/zanima"><h2>POTRKAJ</h2></a></button>
                     <div class="bg_div">
                     </div>                   
                 </div>

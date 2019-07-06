@@ -15,9 +15,14 @@
                 <h1>SPOZNANJE</h1>
                 </div>
                 <div class="card-2">
-                    <img src="/images/avatar2.png" class="avatarimg2">
+                    @if(Session::get('gender') == 'male')
+                        <img src="/images/avatar2.png" class="avatarimg2">
+                        <p>Vesel sem, da sem te lahko bolje spoznal! Sedaj bi te rad/a povabil na ogled “sveta aplikacije”.</p>
+                    @else
+                        <img src="/images/avatar.png" class="avatarimg">
+                    @endif
                     <div class="text_cloud">
-                        <p>Vesel/a sem, da sem te lahko bolje spoznal/a! Sedaj bi te rad/a povabil/a na ogled “sveta aplikacije”.</p>
+                        <p>Vesela sem, da sem te lahko bolje spoznala! Sedaj bi te rada povabila na ogled “sveta aplikacije”.</p>
                 </div>
                 <div class="card-3">
 

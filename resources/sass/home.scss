@@ -68,10 +68,14 @@ input:active {
 
 .card-head {
 	width: 100%;
+	position: relative;
+	z-index: 99;
 }
 
 .card-1 {
 	width: 100%;
+	position: relative;
+	z-index: 99;
 	margin: auto;
 	margin-top: 20px;
 }

@@ -15,7 +15,11 @@
                 <h1>ŠPORT</h1>
                 </div>
                 <div class="card-2">
-                    <img src="/images/avatar2.png" class="avatarimg2">
+                    @if(Session::get('gender') == 'male')
+                        <img src="/images/avatar2.png" class="avatarimg2">
+                    @else
+                        <img src="/images/avatar.png" class="avatarimg">
+                    @endif
                     <div class="text_cloud">
                         <p>Ali kaj treniraš?</p>
                         <img src="/images/running.png"></img>

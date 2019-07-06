@@ -15,7 +15,11 @@
                 <h1>BARVA</h1>
                 </div>
                 <div class="card-2">
-                    <img src="/images/avatar2.png" class="avatarimg2">
+                    @if(Session::get('gender') == 'male')
+                        <img src="/images/avatar2.png" class="avatarimg2">
+                    @else
+                        <img src="/images/avatar.png" class="avatarimg">
+                    @endif
                     <div class="text_cloud">
                         <p>Katera je tvoja najljubša žival?</p>
                         <img src="/images/monster.png"></img>

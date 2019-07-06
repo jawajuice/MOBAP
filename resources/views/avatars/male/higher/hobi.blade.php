@@ -12,43 +12,44 @@
                 </div>
                 <div class="card-1">
 
-                <h1>ŽIVJO</h1>
-                <h1>{{Session::get('user')}}</h1>
+                <h1>HOBIJI</h1>
                 </div>
                 <div class="card-2">
-
-                </div>
-                <div class="card-3">
                     @if(Session::get('gender') == 'male')
                         <img src="/images/avatar2.png" class="avatarimg2">
-                        <div class="text_cloud">
-                            <p><b>Živjo {{Session::get('user')}}</b>
-                                <br>Hvala, da si mi dal tako lepo ime in me uredil!
-                            </p>
-                        </div>
                     @else
                         <img src="/images/avatar.png" class="avatarimg">
-                        <div class="text_cloud">
-                            <p><b>Živjo {{Session::get('user')}}</b>
-                                <br>Hvala, da si mi dala tako lepo ime in me uredila!
-                            </p>
-                        </div>
                     @endif
+                    <div class="text_cloud">
+                        <p>Kakšni so tvoji hobiji?</p>
+                        <img src="/images/monster.png"></img>
+                        <form method="POST" action="/male_trening" >
+                            @csrf
+                            <input type="text" name="hobi" class="prijatelji-input">
+                             <input type="submit" class="hidden" id="hobi-submit"/>
+                        </form>
+                        
+                </div>
+                <div class="card-3">
+
+                    </div>
                 </div>
                 <div class="card-4">
-                    <button class="button-forward"><a href="/male_name"><h2>NAPREJ</h2></a></button>
+                    <div class="label-button">
+                        <label for="hobi-submit" class="button-forward" tabindex="0" ><h2>NAPREJ</h2></label>
+                    </div>
 
                     <div class="bg_div">
                     </div>                   
                 </div>
 
-
-
-
+                <div class="dim">
+                </div>
 
             </div>
         </div>
     </div>
 </div>
 </div>
+
 @endsection

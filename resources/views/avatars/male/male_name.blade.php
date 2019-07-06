@@ -12,21 +12,29 @@
                 </div>
                 <div class="card-1">
 
-                <h1>ŽIVJO</h1>
-                <h1>{{Session::get('user')}}</h1>
-                <h4>MALE HIGHER</h4>
+                <h1>SPOZNAJ ME</h1>
                 </div>
                 <div class="card-2">
 
                 </div>
                 <div class="card-3">
-                    <img src="/images/avatar2.png" class="avatarimg2">
+                    @if(Session::get('gender') == 'male')
+                        <img src="/images/avatar2.png" class="avatarimg2">
                     <div class="text_cloud">
-                        <p>Moje ime je Seba<br> 
+                        <p>Moje ime je {{Session::get('user')}}<br> 
 Rojstni dan imam 1. januarja. Hodim v osnovno šolo. V šoli imam najraje odmor in telovadbo. Rad se igram, rišem in pojem. Kaj pa ti?
 
                         </p>
                     </div>
+                    @else
+                        <img src="/images/avatar.png" class="avatarimg">
+                    <div class="text_cloud">
+                        <p>Moje ime je {{Session::get('user')}}<br> 
+Rojstni dan imam 1. januarja. Hodim v osnovno šolo. V šoli imam najraje odmor in telovadbo. Rada se igram, rišem in pojem. Kaj pa ti?
+                        </p>
+                    </div>
+                    @endif
+
                 </div>
                 <div class="card-4">
                     <button class="button-forward"><a href="/male_bd"><h2>NAPREJ</h2></a></button>

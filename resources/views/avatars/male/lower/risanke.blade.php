@@ -15,7 +15,11 @@
                 <h1>RISANKE</h1>
                 </div>
                 <div class="card-2">
-                    <img src="/images/avatar2.png" class="avatarimg2">
+                    @if(Session::get('gender') == 'male')
+                        <img src="/images/avatar2.png" class="avatarimg2">
+                    @else
+                        <img src="/images/avatar.png" class="avatarimg">
+                    @endif
                     <div class="text_cloud">
 
                         <form method="POST" action="/male_prijatelji" >
@@ -32,7 +36,12 @@
                                 </select>
                                 <input type="submit" class="hidden" id="risanke-submit"/>
                         </form>
+                    @if(Session::get('gender') == 'male')
                         <p>Rad gledaš risanke?</p>
+                    @else
+                        <p>Rada gledaš risanke?</p>
+                    @endif
+                        
                         <img src="/images/monster.png"></img>
                 </div>
                 <div class="card-3">
