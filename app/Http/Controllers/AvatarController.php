@@ -19,17 +19,8 @@ class AvatarController extends Controller
             $age = session('age');
             $gender = session('gender');
 
-            if ($gender == 'female') {
+            return view('avatars/create/create');
 
-            return view('avatars/female/index');
-
-            }
-            else {
-
-            return view('avatars/male/index');
-
-            }
- 
         
     }
     public function male_name() 

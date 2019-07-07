@@ -57,3 +57,27 @@ Route::get('/locitev3', function () {
 Route::get('/bravo', function () {
     return view('info/bravo');
 });
+
+Route::get('/avatar_start', function () {
+    return view('avatars/male/index');
+});
+Route::get('/avatar/hair', function () {
+    return view('avatars/create/hair');
+});
+
+Route::get('/avatar/create', function () {
+    return view('avatars/create/create');
+});
+
+Route::get('/avatar/shirt', function () {
+    return view('avatars/create/shirt');
+});
+Route::get('/avatar/pants', function () {
+    return view('avatars/create/pants');
+});
+Route::get('/avatar/shoes', function () {
+    return view('avatars/create/shoes');
+});
+Route::get('/avatar/skin', function () {
+    return view('avatars/create/skin');
+});
