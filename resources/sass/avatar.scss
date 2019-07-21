@@ -56,6 +56,7 @@
 .avatarimg2 {
 	position:relative;
 	z-index: 10;
+
 	float:left;
 	@media only screen and (max-width: 360px) {
 	width: 120px;
@@ -99,15 +100,18 @@
 	font-size: 13pt;
 	text-align: left;
 	}
-	@media only screen and (max-width: 360px) {
-	width: 150px;
+	@media only screen and (max-width: 350px) {
+	width:160px;
 		p{
 
-	font-size: 12pt;
+	font-size: 11pt;
 
 	}
 
 	}
+}
+.gender-container {
+	
 }
 .hobi-select {
 	color:transparent;

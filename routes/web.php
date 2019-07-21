@@ -16,10 +16,25 @@ Route::get('/', function () {
 });
 
 Route::get('/name', 'VisitorController@name');
+Route::get('/age', 'VisitorController@age');
+Route::get('/gender', 'VisitorController@gender');
+Route::get('/mood', 'VisitorController@mood');
+Route::get('/avatar', 'AvatarController@avatar');
+Route::get('/male_hobi', 'AvatarController@male_hobi');
+Route::get('/male_trening', 'AvatarController@male_trening');
+Route::get('/male_instrument', 'AvatarController@male_instrument');
+Route::get('/male_prijatelji', 'AvatarController@male_prijatelji');
+Route::get('/male_barva', 'AvatarController@male_barva');
+Route::get('/male_igre', 'AvatarController@male_igre');
+Route::get('/male_idol', 'AvatarController@male_idol');
+Route::get('/male_risanke', 'AvatarController@male_risanke');
+Route::get('/male_spoznanje', 'AvatarController@male_spoznanje');
+Route::get('/male_predmet', 'AvatarController@male_predmet');
+Route::get('/male_glasba', 'AvatarController@male_glasba');
 Route::post('/age','VisitorController@age');
 Route::post('/mood','VisitorController@mood');
 Route::post('/gender','VisitorController@gender');
-
+Route::post('/male_zival', 'AvatarController@male_zival');
 Route::post('/avatar','AvatarController@avatar');
 Auth::routes();
 
@@ -40,7 +55,8 @@ Route::post('/male_instrument', 'AvatarController@male_instrument');
 Route::post('/male_risanke', 'AvatarController@male_risanke');
 Route::post('/male_prijatelji', 'AvatarController@male_prijatelji');
 Route::post('/male_barva', 'AvatarController@male_barva');
-Route::post('/male_zival', 'AvatarController@male_zival');
+Route::get('/male_zival', 'AvatarController@male_zival');
+Route::get('/male_letnicas', 'AvatarController@male_letnicas');
 Route::post('/male_letnicas', 'AvatarController@male_letnicas');
 Route::post('/male_spoznanje', 'AvatarController@male_spoznanje');
 Route::get('/male_pomoc', 'AvatarController@male_pomoc');

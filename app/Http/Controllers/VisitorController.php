@@ -53,6 +53,7 @@ class VisitorController extends Controller
 
         $age = $request->input('age');
         //$request->session()->put('user',$request->input('name'));
+
         $request->session()->put('age',$request->input('age'));
 
 
@@ -68,7 +69,7 @@ class VisitorController extends Controller
     }
     public function vars(Request $request) {
         $age = $request->input('age');
-        dd($age);
+
     }
 
 

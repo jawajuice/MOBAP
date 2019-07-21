@@ -11139,10 +11139,31 @@ a.text-dark:focus {
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.19);
   border: none;
   margin-bottom: 20px;
+  margin-top: 30px;
 }
 
 @media only screen and (max-width: 360px) {
   .button-forward {
+    width: 150px;
+    height: 40px;
+  }
+}
+
+.button-forward_start {
+  width: 180px;
+  height: 50px;
+  position: relative;
+  z-index: 10;
+  background-color: #FFA45B;
+  border-radius: 12px;
+  border-color: none;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.19);
+  border: none;
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 360px) {
+  .button-forward_start {
     width: 150px;
     height: 40px;
   }
@@ -11181,6 +11202,13 @@ h2 {
   font-family: Ubuntu;
   font-weight: bold;
   font-size: 25px;
+  color: white;
+}
+
+h3 {
+  font-family: Ubuntu;
+  font-weight: bold;
+  font-size: 18px;
   color: white;
 }
 
@@ -11294,6 +11322,7 @@ input:active {
   -webkit-justify-content: space-between;
           justify-content: space-between;
   margin-top: 20px;
+  margin: auto;
 }
 
 .bar_active {
@@ -11397,10 +11426,20 @@ input:active {
   text-align: center;
 }
 
+.gender-wrap {
+  text-align: center;
+}
+
+#gender-img {
+  height: 160px;
+}
+
 .gender-button {
+  background-color: transparent;
   width: 100px;
   height: 160px;
   border: none;
+  margin-right: 15px;
 }
 
 /* MOOD BUTTONS */
@@ -11520,6 +11559,12 @@ span.cc {
 }
 
 .label-button {
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  bottom: 50px;
   height: 50px;
 }
 
@@ -11656,13 +11701,13 @@ span.cc {
   text-align: left;
 }
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 350px) {
   .text_cloud {
-    width: 150px;
+    width: 160px;
   }
 
   .text_cloud p {
-    font-size: 12pt;
+    font-size: 11pt;
   }
 }
 

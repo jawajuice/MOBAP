@@ -9,8 +9,8 @@
                     <div class="bg_div_upper" id="zanima-bg">
                     </div>    
                 <div class="card-head">
-                    <a href="{{ url('/name') }}"><img src="/images/back_icon.png" class="back_icon">
-                    <img src="/images/volume.png" class="volume_icon"></a>
+                    <a href="{{ url('/male_pomoc2') }}"><img src="/images/back_icon.png" class="back_icon"></a>
+                    <img src="/images/volume.png" class="volume_icon">
                 </div>
                 <div class="card-1">
 
@@ -25,7 +25,7 @@
                     </div>
 
                     <div class="question_cloud">
-                        <p><a href="/info_locitev">Ločitev</a></p>
+                        <a href="/info_locitev"><p>Ločitev</p></a>
                     </div>
 
                     <div class="question_cloud">

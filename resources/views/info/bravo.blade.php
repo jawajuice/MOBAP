@@ -7,8 +7,8 @@
         <div class="col-md-8">
             <div class="card">
                 <div class="card-head">
-                    <a href="{{ url('/name') }}"><img src="/images/back_icon.png" class="back_icon">
-                    <img src="/images/volume.png" class="volume_icon"></a>
+                    <a href="{{ url('/zanima') }}"><img src="/images/back_icon.png" class="back_icon"></a>
+                    <img src="/images/volume.png" class="volume_icon">
                 </div>
                 <div class="card-1">
 
@@ -33,8 +33,8 @@
                     </div>
                 </div>
                 <div class="card-4">
-                    <button class="button-forward"><h2><a href="/zanima">Pogovarjajva se še</a></h2></button>
-                    <button class="button-forward"><h2>Igrajva se</h2></button>
+                    <button class="button-forward"><a href="/zanima"><h3>Pogovarjajva se še</h3></a></button>
+                    <button class="button-forward"><h3>Igrajva se</h3></button>
                     <div class="bg_div">
                     </div>                   
                 </div>

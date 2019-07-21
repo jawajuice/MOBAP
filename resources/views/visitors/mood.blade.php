@@ -7,17 +7,17 @@
         <div class="col-md-8">
             <div class="card">
                 <div class="card-head">
-                    <a href="{{ url('/name') }}"><img src="/images/back_icon.png" class="back_icon">
-                    <img src="/images/volume.png" class="volume_icon"></a>
+                    <a href="{{ url('/gender') }}"><img src="/images/back_icon.png" class="back_icon"></a>
+                    <img src="/images/volume.png" class="volume_icon">
                 </div>
                 <div class="card-1">
 
                 <h1>KAKO SI?</h1>
-                <h4>Kako se počutiš {{Session::get('user')}}?</h4>
+                <h4>Kako se počutiš {{Session::get('gender')}}?</h4>
                 </div>
                 <div class="card-2">
 
-                    <form method="POST" action="/mood">
+                    <form method="POST" action="/avatar">
                     @csrf
                         <div class="cc-selector">
                             <input id="confused" type="radio" name="credit-card" value="confused" />
@@ -52,7 +52,7 @@
                 </div>
                 <div class="card-3">
                     <div class="label-button">
-                        <label for="mood-submit" class="button-forward" tabindex="0" ><h2>NAPREJ</h2></label>
+                        <label for="mood-submit" class="button-forward_start" tabindex="0" ><h2>NAPREJ</h2></label>
                     </div>
                 </div>
                 <div class="card-4">

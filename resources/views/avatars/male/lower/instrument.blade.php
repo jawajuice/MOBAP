@@ -7,8 +7,8 @@
         <div class="col-md-8">
             <div class="card">
                 <div class="card-head">
-                    <a href="{{ url('/name') }}"><img src="/images/back_icon.png" class="back_icon">
-                    <img src="/images/volume.png" class="volume_icon"></a>
+                    <a href="{{ url('/male_trening') }}"><img src="/images/back_icon.png" class="back_icon"></a>
+                    <img src="/images/volume.png" class="volume_icon">
                 </div>
                 <div class="card-1">
 

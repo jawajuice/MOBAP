@@ -7,7 +7,7 @@
         <div class="col-md-8">
             <div class="card">
                 <div class="card-head">
-                    <a href="{{ url('/name') }}"><img src="/images/back_icon.png" class="back_icon">
+                    <a href="{{ url('/avatar/pants') }}"><img src="/images/back_icon.png" class="back_icon">
                     <img src="/images/volume.png" class="volume_icon"></a>
                 </div>
                 <div class="card-1" id="card-1_create">
@@ -32,7 +32,7 @@
                     <div class="bg_div_create">
                         <div class="icon_container">
                              <div class="upper_arrow"><a href="/avatar/create"><img src="/images/create/arrow_down.png"></a></div>
-                             <div class="mid_arrow"><a href="/avatar/create"><img src="/images/create/arrow_left.png"></a><h2>ČEVLJI</h2><a href="/avatar/skin"><img src="/images/create/arrow_right.png"></a></div>
+                             <div class="mid_arrow"><a href="/avatar/pants"><img src="/images/create/arrow_left.png"></a><h2>ČEVLJI</h2><a href="/avatar/skin"><img src="/images/create/arrow_right.png"></a></div>
 
                          <img src="/images/create/cevlji.png" id="majiceimg">
                         </div>
@@ -40,11 +40,11 @@
                     <div class="navbar_bot">
 
                         <div class="navbar_bot_icon_container">
-                            <img src="/images/bot_icons/female-hair.png">
-                            <img src="/images/bot_icons/casual-t-shirt-.png">
-                            <img src="/images/bot_icons/long-pants.png">
-                            <img src="/images/bot_icons/trail-running-shoe.png">
-                            <img src="/images/bot_icons/icons8-skin-96.png">
+                            <a href="/avatar/hair"><img src="/images/bot_icons/female-hair.png"></a>
+                            <a href="/avatar/shirt"><img src="/images/bot_icons/casual-t-shirt-.png"></a>
+                            <a href="/avatar/pants"><img src="/images/bot_icons/long-pants.png"></a>
+                            <a href="/avatar/shoes"><img src="/images/bot_icons/trail-running-shoe.png"></a>
+                            <a href="/avatar/skin"><img src="/images/bot_icons/icons8-skin-96.png"></a>
                         </div>
                     </div>     
                 </div>

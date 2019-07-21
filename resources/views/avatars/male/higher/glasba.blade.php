@@ -7,8 +7,8 @@
         <div class="col-md-8">
             <div class="card">
                 <div class="card-head">
-                    <a href="{{ url('/name') }}"><img src="/images/back_icon.png" class="back_icon">
-                    <img src="/images/volume.png" class="volume_icon"></a>
+                    <a href="{{ URL::previous() }}"><img src="/images/back_icon.png" class="back_icon"></a>
+                    <img src="/images/volume.png" class="volume_icon">
                 </div>
                 <div class="card-1">
 
@@ -38,9 +38,9 @@
                                 <input type="submit" class="hidden" id="glasba-submit"/>
                         </form>
                     @if(Session::get('gender') == 'male')
-                        <p>Rad gledaš risanke?</p>
+                        <p>Kakšno glasbo rad poslušaš?</p>
                     @else
-                        <p>Rada gledaš risanke?</p>
+                        <p>Kakšno glasbo rada poslušaš?</p>
                     @endif
                         <img src="/images/drum.png"></img>
                 </div>

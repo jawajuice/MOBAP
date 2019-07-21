@@ -7,8 +7,8 @@
         <div class="col-md-8">
             <div class="card">
                 <div class="card-head">
-                    <a href="{{ url('/name') }}"><img src="/images/back_icon.png" class="back_icon">
-                    <img src="/images/volume.png" class="volume_icon"></a>
+                    <a href="{{ URL::previous() }}"><img src="/images/back_icon.png" class="back_icon"></a>
+                    <img src="/images/volume.png" class="volume_icon">
                 </div>
                 <div class="card-1">
 
@@ -17,7 +17,7 @@
                 <div class="card-2">
                     @if(Session::get('gender') == 'male')
                         <img src="/images/avatar2.png" class="avatarimg2">
-                        <p>Vesel sem, da sem te lahko bolje spoznal! Sedaj bi te rad/a povabil na ogled “sveta aplikacije”.</p>
+                  
                     @else
                         <img src="/images/avatar.png" class="avatarimg">
                     @endif

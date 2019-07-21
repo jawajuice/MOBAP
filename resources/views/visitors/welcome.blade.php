@@ -16,7 +16,7 @@
                 </div>
                 <div class="card-3"></div>
                 <div class="card-4">
-                    <button class="button-forward"><a href="/name"><h2>ZAČNI</h2></a></button>
+                    <button class="button-forward_start"><a href="/name"><h2>ZAČNI</h2></a></button>
                 </div>
 
             </div>

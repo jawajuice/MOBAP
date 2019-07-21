@@ -7,8 +7,8 @@
             <div class="col-md-8">
                 <div class="card">
                     <div class="card-head">
-                        <a href="{{ url('/name') }}"><img src="/images/back_icon.png" class="back_icon">
-                        <img src="/images/volume.png" class="volume_icon"></a>
+                        <a href="{{ url('/name') }}"><img src="/images/back_icon.png" class="back_icon"></a>
+                        <img src="/images/volume.png" class="volume_icon">
                     </div>
                     <div class="card-1">
 
@@ -36,7 +36,7 @@
                     </div>
                     <div class="card-3">
                     <div class="label-button">
-                        <label for="age-submit" class="button-forward" tabindex="0" ><h2>NAPREJ</h2></label>
+                        <label for="age-submit" class="button-forward_start" tabindex="0" ><h2>NAPREJ</h2></label>
                     </div>
                     </div>
                     <div class="card-4">
