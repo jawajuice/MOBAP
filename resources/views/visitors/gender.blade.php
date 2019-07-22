@@ -20,7 +20,7 @@
                         <form method="POST" action="/mood">
                         @csrf
                         <div class="gender-container">
-                           <button type="submit" value="male" name="gender" class="gender-button">
+                           <button type="submit" value="male" name="gender" class="gender-button-m">
                             <img src="/images/man.png" id="gender-img">
                            </button>
                         </div>

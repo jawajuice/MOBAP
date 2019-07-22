@@ -11244,6 +11244,7 @@ input:active {
 .card-head {
   width: 100%;
   position: relative;
+  margin-top: 15px;
   z-index: 99;
 }
 
@@ -11434,12 +11435,24 @@ input:active {
   height: 160px;
 }
 
+#pomocp {
+  font-size: 12px;
+}
+
 .gender-button {
   background-color: transparent;
   width: 100px;
   height: 160px;
   border: none;
   margin-right: 15px;
+}
+
+.gender-button-m {
+  background-color: transparent;
+  width: 100px;
+  height: 160px;
+  border: none;
+  margin-right: 30px;
 }
 
 /* MOOD BUTTONS */
@@ -11674,7 +11687,7 @@ span.cc {
 }
 
 .text_cloud {
-  margin-top: 50px;
+  margin-top: 40px;
   width: 180px;
   min-height: 50px;
   position: relative;

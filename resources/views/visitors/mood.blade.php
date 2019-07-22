@@ -13,7 +13,7 @@
                 <div class="card-1">
 
                 <h1>KAKO SI?</h1>
-                <h4>Kako se počutiš {{Session::get('gender')}}?</h4>
+                <h4>Kako se počutiš {{Session::get('user')}}?</h4>
                 </div>
                 <div class="card-2">
 

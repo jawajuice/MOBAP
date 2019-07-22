@@ -32,12 +32,12 @@
                 <div class="card-4" id="card-4_create">
                          <div class="create_button_container">
                         <button class="button-forward_create" ><a href="/avatar/hair"><h2>FRIZURE</h2></a></button>
-                        <button class="button-forward_create" ><a href="/avatar_start"><h2>NAPREJ</h2></a></button>
-                        <button class="button-forward_create" ><a href="/avatar_start"><h2>NAPREJ</h2></a></button>
+                        <button class="button-forward_create" ><a href="/avatar/shirt"><h2>MAJICE</h2></a></button>
+                        <button class="button-forward_create" ><a href="/avatar/pants"><h2>HLAČE</h2></a></button>
                         </div>
                         <div class="create_button_container" id="container_row2">
-                        <button class="button-forward_create" ><a href="/avatar_start"><h2>NAPREJ</h2></a></button>
-                        <button class="button-forward_create" ><a href="/avatar_start"><h2>BARVA KOŽE</h2></a></button>
+                        <button class="button-forward_create" ><a href="/avatar/shoes"><h2>ČEVLJI</h2></a></button>
+                        <button class="button-forward_create" ><a href="/avatar/skin"><h2>BARVA KOŽE</h2></a></button>
                     </div>
                     <div class="bg_div_create">
                     </div>

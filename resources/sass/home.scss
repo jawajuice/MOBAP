@@ -98,6 +98,7 @@ input:active {
 .card-head {
 	width: 100%;
 	position: relative;
+	margin-top:15px;
 	z-index: 99;
 }
 
@@ -263,6 +264,9 @@ width: 30%;
 #gender-img {
 	height: 160px;
 }
+#pomocp{
+	font-size: 12px;
+}
 .gender-button {
 
 	background-color: transparent;
@@ -270,6 +274,15 @@ width: 30%;
 	height: 160px;
 	border: none;
 	margin-right:15px;
+
+}
+.gender-button-m {
+
+	background-color: transparent;
+	width: 100px;
+	height: 160px;
+	border: none;
+	margin-right:30px;
 
 }
 .cc-selector {
