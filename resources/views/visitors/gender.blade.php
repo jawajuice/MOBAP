@@ -17,7 +17,7 @@
                     </div>
                     <div class="card-2">
                         <div class="gender-wrap">
-                        <form method="POST" action="/mood">
+                        <form method="POST" action="/avatar_name">
                         @csrf
                         <div class="gender-container">
                            <button type="submit" value="male" name="gender" class="gender-button-m">

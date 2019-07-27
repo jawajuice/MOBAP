@@ -19,6 +19,7 @@ Route::get('/name', 'VisitorController@name');
 Route::get('/age', 'VisitorController@age');
 Route::get('/gender', 'VisitorController@gender');
 Route::get('/mood', 'VisitorController@mood');
+Route::get('/avatar_name', 'VisitorController@avatarName');
 Route::get('/avatar', 'AvatarController@avatar');
 Route::get('/male_hobi', 'AvatarController@male_hobi');
 Route::get('/male_trening', 'AvatarController@male_trening');
@@ -63,6 +64,7 @@ Route::get('/male_pomoc', 'AvatarController@male_pomoc');
 Route::get('/male_pomoc2', 'AvatarController@male_pomoc2');
 Route::get('/zanima', 'AvatarController@zanima');
 Route::get('/info_locitev', 'AvatarController@locitev');
+Route::post('/avatar_name', 'VisitorController@avatarName');
 
 Route::get('/locitev2', function () {
     return view('info/locitev2');

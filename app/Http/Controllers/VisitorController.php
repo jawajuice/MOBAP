@@ -31,19 +31,16 @@ class VisitorController extends Controller
 
         return view('visitors/name');
     }
+        public function avatarName(Request $request) {
+
+            $request->session()->put('gender',$request->input('gender'));
+            
+            return view('visitors/avatar_name');
+
+    }
         public function age(Request $request) {
             $name = $request->input('name');
             $request->session()->put('user',$request->input('name'));
-/*            $visitor = new \App\Visitor;
-            $visitor->name = $name;
-            $visitor->save();*/
-/*            request()->validate([
-
-            'name' => ['required', 'min:3', 'max:10']
-
-            ]);
-            \App\Visitor::create(request(['name', '']));*/
-
              
             return view('visitors/age');
 
@@ -62,8 +59,9 @@ class VisitorController extends Controller
     }
 
     public function mood(Request $request) {
-
-        $request->session()->put('gender',$request->input('gender'));
+            $name = $request->input('avatar_name');
+            $request->session()->put('avatar',$request->input('avatar_name'));
+        
 
         return view('visitors/mood'); 
     }
