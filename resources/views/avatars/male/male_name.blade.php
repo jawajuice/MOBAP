@@ -21,7 +21,7 @@
                     @if(Session::get('gender') == 'male')
                         <img src="/images/avatar2.png" class="avatarimg2">
                     <div class="text_cloud">
-                        <p>Moje ime je {{Session::get('user')}}<br> 
+                        <p>Moje ime je {{Session::get('avatar')}}<br> 
 Rojstni dan imam 1. januarja. Hodim v osnovno šolo. V šoli imam najraje odmor in telovadbo. Rad se igram, rišem in pojem. Kaj pa ti?
 
                         </p>
@@ -29,7 +29,7 @@ Rojstni dan imam 1. januarja. Hodim v osnovno šolo. V šoli imam najraje odmor 
                     @else
                         <img src="/images/avatar.png" class="avatarimg">
                     <div class="text_cloud">
-                        <p>Moje ime je {{Session::get('user')}}<br> 
+                        <p>Moje ime je {{Session::get('avatar')}}<br> 
 Rojstni dan imam 1. januarja. Hodim v osnovno šolo. V šoli imam najraje odmor in telovadbo. Rada se igram, rišem in pojem. Kaj pa ti?
                         </p>
                     </div>
