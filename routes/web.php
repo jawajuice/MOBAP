@@ -10,11 +10,10 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+Auth::routes();
 Route::get('/', function () {
     return view('visitors/welcome');
 });
-
 Route::get('/name', 'VisitorController@name');
 Route::get('/age', 'VisitorController@age');
 Route::get('/gender', 'VisitorController@gender');
@@ -37,13 +36,9 @@ Route::post('/mood','VisitorController@mood');
 Route::post('/gender','VisitorController@gender');
 Route::post('/male_zival', 'AvatarController@male_zival');
 Route::post('/avatar','AvatarController@avatar');
-Auth::routes();
-
 Route::get('/home', 'HomeController@index')->name('home');
-
 Route::resource('forms', 'FormsController');
 Route::resource('users', 'UsersController');
-
 Route::get('/male_name', 'AvatarController@male_name');
 Route::get('/male_bd', 'AvatarController@male_bd');
 Route::post('/male_hobi', 'AvatarController@male_hobi');
@@ -75,18 +70,15 @@ Route::get('/locitev3', function () {
 Route::get('/bravo', function () {
     return view('info/bravo');
 });
-
 Route::get('/avatar_start', function () {
     return view('avatars/male/index');
 });
 Route::get('/avatar/hair', function () {
     return view('avatars/create/hair');
 });
-
 Route::get('/avatar/create', function () {
     return view('avatars/create/create');
 });
-
 Route::get('/avatar/shirt', function () {
     return view('avatars/create/shirt');
 });

@@ -15,11 +15,13 @@ class UsersController extends Controller
     //index of /users, only available to admin users
     public function index()
     {
-        if (auth()->user()->admin == 1) {
+        if (auth()->user()->admin == 1)
+        {
             $users = User::All();
             return view('users.index', compact('users'));
         }
-        else {
+        else
+        {
             return abort(403);
         }
     }
@@ -52,10 +54,10 @@ class UsersController extends Controller
      * @return \Illuminate\Http\Response
      */
     //view specific user details, only available to admin users.
-    public function show($id) {
+    public function show($id)
+    {
         if (auth()->user()->admin == 1) {
             $user = User::findOrFail($id);
-
             return view('users.show', compact('user'));
            }
         else {

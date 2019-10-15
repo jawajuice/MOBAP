@@ -13,16 +13,12 @@ class AvatarController extends Controller
      */
     public function avatar(Request $request)
     {
-        //
         $request->session()->put('mood',$request->input('credit-card'));
-
-            $age = session('age');
-            $gender = session('gender');
-
-            return view('avatars/create/create');
-
-        
+        $age = session('age');
+        $gender = session('gender');
+        return view('avatars/create/create');
     }
+
     public function male_name() 
     {
         return view('avatars/male/male_name');
@@ -38,142 +34,148 @@ class AvatarController extends Controller
         $request->session()->put('hobi',$request->input('hobi'));
         return view('avatars/male/lower/hobi');
     }
+
     public function male_hobi(Request $request) 
     {
         $request->session()->put('bday',$request->input('date-change'));
+        $age = session('age');
+        $gender = session('gender');
 
-            $age = session('age');
-            $gender = session('gender');
-            if ($age == 'lower') {
-
+        if ($age == 'lower')
+        {
             return view('avatars/male/lower/hobi');
-
-            }
-            else {
-
+        }
+        else
+        {
             return view('avatars/male/higher/hobi');
-
-            }
+        }
     }
 
-    public function male_instrument(Request $request) {
+    public function male_instrument(Request $request)
+    {
         $request->session()->put('trening',$request->input('trening'));
-
         return view('avatars/male/lower/instrument');
     }
-    public function male_risanke(Request $request) {
+
+    public function male_risanke(Request $request)
+    {
         $request->session()->put('instrument',$request->input('instrument'));
+        $age = session('age');
 
-            $age = session('age');
-            if ($age == 'lower') {
+        if ($age == 'lower')
+        {
+            return view('avatars/male/lower/risanke');
 
-                return view('avatars/male/lower/risanke');
-
-            }
-            else {
-
-                return view('avatars/male/lower/prijatelji');
-
-            }
-
+        }
+        else
+        {
+            return view('avatars/male/lower/prijatelji');
+        }
     }
-    public function male_prijatelji(Request $request) {
-        $request->session()->put('risanke',$request->input('risanke'));
 
+    public function male_prijatelji(Request $request)
+    {
+        $request->session()->put('risanke',$request->input('risanke'));
         return view('avatars/male/lower/prijatelji');
     }
     //FANT 10-12
-    public function male_glasba(Request $request) {
+    public function male_glasba(Request $request)
+    {
         $request->session()->put('knjiga',$request->input('knjiga'));
-
         return view('avatars/male/higher/glasba');
     }
-    public function male_igre(Request $request) {
-        $request->session()->put('glasba',$request->input('glasba'));
 
+    public function male_igre(Request $request)
+    {
+        $request->session()->put('glasba',$request->input('glasba'));
         return view('avatars/male/higher/igre');
     }
-    public function male_idol(Request $request) {
-        $request->session()->put('igre',$request->input('igre'));
 
+    public function male_idol(Request $request)
+    {
+        $request->session()->put('igre',$request->input('igre'));
         return view('avatars/male/higher/idol');
     }
-    public function male_predmet(Request $request) {
-        $request->session()->put('idol',$request->input('idol'));
 
+    public function male_predmet(Request $request)
+    {
+        $request->session()->put('idol',$request->input('idol'));
         return view('avatars/male/higher/predmet');
     }
+
     public function male_barva(Request $request) {
         $request->session()->put('prijatelji',$request->input('prijatelji'));
-            $age = session('age');
-            if ($age == 'lower') {
-
-                return view('avatars/male/lower/barva');
-
-            }
-            else {
-
-                return view('avatars/male/higher/knjiga');
-
-            }
-
+        $age = session('age');
+        if ($age == 'lower')
+        {
+            return view('avatars/male/lower/barva');
+        }
+        else
+        {
+            return view('avatars/male/higher/knjiga');
+        }
     }
-    public function male_zival(Request $request) {
-        $request->session()->put('barva',$request->input('barva'));
 
+    public function male_zival(Request $request)
+    {
+        $request->session()->put('barva',$request->input('barva'));
         return view('avatars/male/lower/zival');
     }
-    public function male_letnicas(Request $request) {
+    public function male_letnicas(Request $request)
+    {
         $request->session()->put('zival',$request->input('zival'));
-
         return view('avatars/male/lower/letnicas');
     }
 
-    public function male_spoznanje(Request $request) {
-        if ($request->input('letnicas') !== null) {
+    public function male_spoznanje(Request $request)
+    {
+        if ($request->input('letnicas') !== null)
+        {
             $request->session()->put('letnicas',$request->input('letnicas'));
         }
-        else {
+        else
+        {
             $request->session()->put('predmet',$request->input('predmet'));
         }
-
         return view('avatars/male/spoznanje');
     }
-    public function male_pomoc() {
-
+    
+    public function male_pomoc()
+    {
         return view('avatars/male/pomoc1');
     }
-    public function male_pomoc2() {
 
+    public function male_pomoc2()
+    {
         return view('avatars/male/pomoc2');
     }
+
     public function female_hobi(Request $request) 
     {
         $request->session()->put('bday',$request->input('date-submit'));
 
-            $age = session('age');
-            $gender = session('gender');
+        $age = session('age');
+        $gender = session('gender');
 
-            if ($age == 'lower') {
-
+        if ($age == 'lower')
+        {
             return view('avatars/female/lower/hobi');
-
-            }
-            else {
-
+        }
+        else
+        {
             return view('avatars/female/higher/hobi');
-
-            }
+        }
     }
-    public function zanima() {
 
+    public function zanima()
+    {
         return view('info/zanima');
     }
-    public function locitev() {
 
+    public function locitev()
+    {
         return view('info/locitev');
     }
-    //***********VPRAŠANJA***********//
 
     /**
      * Show the form for creating a new resource.

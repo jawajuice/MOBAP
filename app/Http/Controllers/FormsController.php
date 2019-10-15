@@ -27,27 +27,27 @@ class FormsController extends Controller
 	public function show(Form $form)
 	{
 		$this->authorize('view', $form);
-
 		return view('forms.show', compact('form'));
 	}
 	//create form TODO: each user can only create 1 form
 	public function create()
 	{
 		$forms = Form::where('owner_id', auth()->id())->get();
-		if (!isset($forms)){
-		return view('forms.create');
+		if (!isset($forms))
+		{
+			return view('forms.create');
 		}
-		else {
-		return view('forms.show');
+		else
+		{
+			return view('forms.show');
 		}
-
 	}
 	// We don't need an edit option at this point
-    public function update(){
-
+    public function update()
+    {
     	return abort(404);
     }
-
+    
    	public function store()
     {
     	//validation of user input
@@ -66,6 +66,4 @@ class FormsController extends Controller
 
     	return redirect('/forms');
     }
-
-
 }
